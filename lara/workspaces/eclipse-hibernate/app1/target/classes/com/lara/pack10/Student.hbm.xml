@@ -1,0 +1,31 @@
+
+<hibernate-mapping package="com.lara.pack7">
+
+    <class name="Student" table="STUDENT">
+    
+    
+    
+    
+    
+    
+    
+        <id name="id" column="S_ID">
+        	<generator class="sequence">
+        		<param name="sequence">student_seq</param>
+        	</generator>
+        </id>
+       <property name="firstName"/>
+       <property name="lastName"/>
+       
+     </class>
+     
+</hibernate-mapping>
+<!-- always property names should be the attribute names of the class -->
+<!-- while saving first student , id will be 1 -->
+<!-- for 2 nd student it is 2, -->
+<!-- we are using sequence generator -->
+
+
+<!-- we need to specify both hbm file in configuration file -->
+<!-- 					<mapping resource="com/lara/pack7/Student.hbm.xml"/> -->
+<!-- 					<mapping resource="com/lara/pack7/Address.hbm.xml"/> -->

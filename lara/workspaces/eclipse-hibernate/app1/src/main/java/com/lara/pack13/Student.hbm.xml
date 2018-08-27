@@ -1,0 +1,13 @@
+<hibernate-mapping package="com.lara.pack13">
+	<class name="Student" table="STUDENT">
+		<id name="id" column="S_ID">
+		<generator class="sequence">
+			<param name="sequence">student_seq</param>
+		</generator>
+		</id>
+		
+		
+		<property name="firstName"/>
+		<property name="lastName"/>
+	</class>
+</hibernate-mapping>

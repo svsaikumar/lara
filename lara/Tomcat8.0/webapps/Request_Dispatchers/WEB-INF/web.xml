@@ -1,0 +1,62 @@
+<web-app>
+	<servlet>
+		<servlet-name>s10</servlet-name>
+		<servlet-class>req.Servlet10</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s10</servlet-name>
+		<url-pattern>/s10</url-pattern>
+	</servlet-mapping>
+
+<!-- =================================================  -->
+	<servlet>
+		<servlet-name>s11</servlet-name>
+		<servlet-class>req.Servlet11</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s11</servlet-name>
+		<url-pattern>/s11</url-pattern>
+	</servlet-mapping>
+
+<!-- =================================================  -->
+	<servlet>
+		<servlet-name>s12</servlet-name>
+		<servlet-class>req.Servlet12</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s12</servlet-name>
+		<url-pattern>/s12</url-pattern>
+	</servlet-mapping>
+
+<!-- =================================================  -->
+	<servlet>
+		<servlet-name>s13</servlet-name>
+		<servlet-class>req.Servlet13</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s13</servlet-name>
+		<url-pattern>/s13</url-pattern>
+	</servlet-mapping>
+
+<!-- =================================================  -->
+	<servlet>
+		<servlet-name>s14</servlet-name>
+		<servlet-class>req.Servlet14</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s14</servlet-name>
+		<url-pattern>/s14</url-pattern>
+	</servlet-mapping>
+<!-- =================================================  -->
+
+</web-app>

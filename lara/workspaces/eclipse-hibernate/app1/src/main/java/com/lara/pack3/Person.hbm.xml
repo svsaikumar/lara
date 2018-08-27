@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+
+
+
+<hibernate-mapping package="com.lara.pack3">
+
+  <class name="Person" table="PERSON">
+      	<id name="id" column="PERSON_ID" />
+        <property name="firstName" column="FIRST_NAME"/>
+        <property name="lastName" column="LAST_NAME"/>
+   </class>
+   
+   
+<!-- ================================================================================ -->
+   
+   
+    <class name="Employee" table="Employee">
+      	<id name="id" column="Employee_ID" />
+        <property name="firstName" column="FIRST_NAME"/>
+        <property name="lastName" column="LAST_NAME"/>
+        <property name = "email"/>
+        <property name = "salary"/>
+   </class>
+   
+   <!-- ================================================================================ -->
+   
+   
+    <class name="PermanentEmployee" table="P_Employee">
+      	<id name ="id" column = "P_Employee_ID" />
+        <property name = "firstName" column = "FIRST_NAME"/>
+        <property name = "lastName" column = "LAST_NAME"/>
+        <property name = "email"/>
+        <property name = "salary"/>
+        <property name = "designation"/>
+        <property name = "leaves"/>
+   </class>
+     
+</hibernate-mapping>
+<!-- always property names should be the attribute names of the class -->
+<!-- under one <hibernate-mapping>, any number class mappings can be provided -->
+
+<!-- we can provide 3 different hbm files for 3 classes -->

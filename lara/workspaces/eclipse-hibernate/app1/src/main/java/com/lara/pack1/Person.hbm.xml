@@ -1,0 +1,23 @@
+
+<hibernate-mapping package="com.lara.pack1">
+
+    <class name="Person" table="PERSON">
+    
+        <id name="id" column="PERSON_ID" />
+	        <property name="firstName" column="FIRST_NAME"/>
+	        <property name="lastName" column="LAST_NAME"/>
+	        
+	        
+	       
+ 	        <component name="address" class ="Address"><!--Address will use the primary key of Person table -->
+	        			<property name="houseNo" column="HOUSE_NO"/>
+	        			<property name="streetName" column="STREET_NAME"/>
+	        </component>
+     </class>
+     
+</hibernate-mapping>
+<!-- always property names should be the attribute names of the class -->
+<!-- here address is linked with person table -->
+<!-- The component element is used to map all the Address entity fields to the PERSON table. -->
+<!--  In Hibernate terms the Address entity is called the component and it cannot have its own primary key,  -->
+<!--  it uses the primary key of the enclosing pERSON entity. -->

@@ -1,0 +1,15 @@
+<hibernate-mapping package="com.lara.pack13">
+	<class name="Mail" table="MAIL">
+		<id name="id" column="M_ID">
+		<generator class="sequence">
+			<param name="sequence">mail_seq</param>
+		</generator>
+		</id>
+		
+		
+		<property name="username"/>
+		<property name="password"/>
+		<many-to-one name="student" class="Student" column="student_id" cascade="all"/>
+		
+	</class>
+</hibernate-mapping>

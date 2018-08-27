@@ -1,0 +1,26 @@
+<hibernate-mapping package="com.lara.pack17">
+	<class name="Student" table="STUDENT">
+	<id name="id" column="S_ID">
+		<generator class="sequence">
+			<param name="sequence">student_seq</param>
+		</generator>
+	</id>
+	
+	
+	
+	<property name="firstName"/>
+	<property name="lastName"/>
+	<set name="batches" table="s_b">
+ 		<key column="s_id"/><!--foreign key -->
+ 		<many-to-many column="b_id" class="Batch"/><!--foreign key from batch -->
+	</set>
+	
+<!-- 		1.persist 
+			2.save-update 
+			3.delete 
+			4.none
+			 -->
+	</class>
+</hibernate-mapping>
+<!-- many to many requires intermediate table -->
+<!-- many to many is bi directional, there is no uni directional -->

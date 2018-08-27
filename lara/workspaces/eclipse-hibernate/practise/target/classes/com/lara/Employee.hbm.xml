@@ -1,0 +1,16 @@
+<hibernate-mapping package="com.lara">
+	<class name= "Employee" table="MY_TABLE">
+		<id name="id"/>
+		<property name="name"/>
+		<property name="age"/>
+		<property name="city"/>
+		
+		
+		
+		
+		<component name="salary" class="Salary">
+			<property name="net"/>
+			<property name="gross"/>
+		</component>
+	</class>
+</hibernate-mapping>

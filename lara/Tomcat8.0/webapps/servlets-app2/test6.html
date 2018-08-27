@@ -1,0 +1,51 @@
+<form action="s6">
+	FirstName: <input type="text" name="firstName"/><br>
+	LastName : <input type="text" name="lastName"/><br>
+	Age      :<input type="text" name="age"><br>
+
+
+	Email    :<input type="text" name="email"><br>
+	Alternate Email:<input type="text" name="email"><br>
+	Username:<input type="text" name="username"/><br>
+	Password :<input type="password" name="password"/><br>
+	Address  : <br><textarea name = "address" rows="5" cols="15"></textarea><br>
+
+	Gender   : <input type="radio" name="gender" value="m"/>Male &nbsp;&nbsp
+		       <input type="radio" name="gender" value="f"/>FeMale</br>
+
+	Skills   :<input type="checkbox" name="skill" value="c"/>C &nbsp;&nbsp
+		       <input type="checkbox" name="skill" value="cpp"/>C++ &nbsp;&nbsp
+	           <input type="checkbox" name="skill" value="java"/>Java &nbsp;&nbsp
+	           <input type="checkbox" name="skill" value="orcl"/>Oracle<br>
+
+	Education :<select name="education" multiple>
+					<option value="select">-select-</option>
+					<option value="be">BE</option>
+					<option value="mba">MBA</option>
+					<option value="mca">MCA</option>
+				</select><br>
+
+			  <input type="submit" value="submit"/>
+
+</form>
+
+<!--
+	2 radio buttons under one group as they have same name(we can select max one value)
+	&nbsp = non blank space(for providing white or blank space)
+
+	
+	in case of text, password, textarea,a  blank value is considering
+	explicitly we have to select checkbox and radio box, otherwise it won't select any thing
+	end user can't provide a value for radio or checkbox, developer only has to provide a value
+
+
+	develper only has to provide value for dropdown list also
+
+
+	getParameter() method returns only one value
+
+	if there are 2 text fiels with same, the first entered value is considering
+
+	getParameterValues() method returns String[]
+-->
+

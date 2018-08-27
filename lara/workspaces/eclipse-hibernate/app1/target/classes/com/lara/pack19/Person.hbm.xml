@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+
+
+
+<hibernate-mapping package="com.lara.pack19">
+
+  <class name="Person" table="PERSON">
+  		<cache usage="read-only"/>
+      	<id name="id" column="PERSON_ID" />
+        <property name="firstName" column="FIRST_NAME"/>
+        <property name="lastName" column="LAST_NAME"/>
+        <property name="age"/>
+   
+   </class>
+     
+</hibernate-mapping>
+
+<!-- 
+1. ehcache path = S:\softwares\hibernate-release-4.2.21.Final\project\hibernate-ehcache\src\test\resources
+<cache name="com.lara.pack19.Person"
+        maxElementsInMemory="1000"
+        eternal="true"
+        timeToIdleSeconds="0"
+        timeToLiveSeconds="0"
+        overflowToDisk="false"
+        />
+        
+ 2.add  property in cfg file
+ 
+   <property name="hibernate.cache.region.factory_class">org.hibernate.cache.EhCacheRegionFactory</property>
+        
+ 3.downloading dependencies from pom.xml
+ <dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-ehcache</artifactId>
+	    <version>5.2.17.Final</version>
+	</dependency>
+    
+    
+ 4.adding cache tag in hbm file
+ <cache usage="read-only"/>
+        . -->

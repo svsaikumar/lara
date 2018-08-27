@@ -1,0 +1,28 @@
+<hibernate-mapping package="com.lara.pack7">
+
+    <class name="Address" table="ADDRESS">
+    
+    
+    
+    
+    
+    
+    
+        <id name="addressId" column="ADDRESS_ID"><!-- Primary key and foreign key -->
+        	<generator class="foreign">
+        		<param name="property">student</param>
+        	</generator>
+        </id>
+       <property name="houseNo"/>
+       <property name="streetName"/>
+       <one-to-one name="student" class ="Student"/>    
+     </class>
+</hibernate-mapping>
+<!-- student attribute as foreign key  to ADDRESS_ID COLUMN-->
+<!-- student is reference to foreign key -->
+<!-- we will specify the base table, in that table primary key column will act as reference column-->
+<!-- one to one mapping -->
+<!-- this is uni directional one to one mapping -->
+<!-- one record to student table is mapping to one record of address table -->
+<!-- consttined = false;wrt db , add table is not a child to student -->
+<!-- The ForeignGenerator class returns id of parent object as id for child object. -->

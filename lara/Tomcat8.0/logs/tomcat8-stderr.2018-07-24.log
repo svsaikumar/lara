@@ -1,0 +1,65 @@
+
+2018-07-24 15:25:00 Commons Daemon procrun stderr initialized
+24-Jul-2018 15:25:12.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.23
+24-Jul-2018 15:25:12.661 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 28 2017 10:30:11 UTC
+24-Jul-2018 15:25:12.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.23.0
+24-Jul-2018 15:25:12.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Jul-2018 15:25:12.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Jul-2018 15:25:12.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jul-2018 15:25:12.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_161
+24-Jul-2018 15:25:12.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_161-b12
+24-Jul-2018 15:25:12.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jul-2018 15:25:12.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         S:\softwares\Tomcat8.0
+24-Jul-2018 15:25:12.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         S:\softwares\Tomcat8.0
+24-Jul-2018 15:25:12.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=S:\softwares\Tomcat8.0
+24-Jul-2018 15:25:12.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=S:\softwares\Tomcat8.0
+24-Jul-2018 15:25:12.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=S:\softwares\Tomcat8.0\temp
+24-Jul-2018 15:25:12.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jul-2018 15:25:12.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=S:\softwares\Tomcat8.0\conf\logging.properties
+24-Jul-2018 15:25:12.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: exit
+24-Jul-2018 15:25:12.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xms128m
+24-Jul-2018 15:25:12.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx256m
+24-Jul-2018 15:25:12.671 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [S:\softwares\Tomcat8.0\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;S:\softwares\oraclexe\app\oracle\product\11.2.0\server\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_161\bin;S:\softwares\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib\ojdbc5.jar;S:\softwares\Git\cmd;S:\softwares\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;.]
+24-Jul-2018 15:25:15.378 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-7070"]
+24-Jul-2018 15:25:16.333 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Jul-2018 15:25:16.387 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+24-Jul-2018 15:25:16.404 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Jul-2018 15:25:16.404 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 6908 ms
+24-Jul-2018 15:25:16.664 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Jul-2018 15:25:16.664 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.23
+24-Jul-2018 15:25:17.177 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [S:\softwares\Tomcat8.0\webapps\test.war]
+24-Jul-2018 15:25:22.880 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [S:\softwares\Tomcat8.0\webapps\test.war] has finished in [5,650] ms
+24-Jul-2018 15:25:22.924 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\docs]
+24-Jul-2018 15:25:23.240 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\docs] has finished in [316] ms
+24-Jul-2018 15:25:23.240 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\jsp-app1]
+24-Jul-2018 15:25:25.608 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Jul-2018 15:25:25.612 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\jsp-app1] has finished in [2,372] ms
+24-Jul-2018 15:25:25.612 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\jsp-app2]
+24-Jul-2018 15:25:25.644 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\jsp-app2] has finished in [32] ms
+24-Jul-2018 15:25:25.644 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\jsp-app3]
+24-Jul-2018 15:25:25.671 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\jsp-app3] has finished in [26] ms
+24-Jul-2018 15:25:25.671 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\manager]
+24-Jul-2018 15:25:25.875 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\manager] has finished in [204] ms
+24-Jul-2018 15:25:25.876 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\New folder]
+24-Jul-2018 15:25:26.095 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\New folder] has finished in [219] ms
+24-Jul-2018 15:25:26.096 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\practise]
+24-Jul-2018 15:25:26.243 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\practise] has finished in [147] ms
+24-Jul-2018 15:25:26.243 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\Request_Dispatchers]
+24-Jul-2018 15:25:26.509 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\Request_Dispatchers] has finished in [265] ms
+24-Jul-2018 15:25:26.509 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\ROOT]
+24-Jul-2018 15:25:26.557 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\ROOT] has finished in [48] ms
+24-Jul-2018 15:25:26.557 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\servlets-app1]
+24-Jul-2018 15:25:26.628 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\servlets-app1] has finished in [70] ms
+24-Jul-2018 15:25:26.628 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\servlets-app2]
+24-Jul-2018 15:25:26.776 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\servlets-app2] has finished in [148] ms
+24-Jul-2018 15:25:26.777 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\servlets-app3]
+24-Jul-2018 15:25:27.060 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\servlets-app3] has finished in [284] ms
+24-Jul-2018 15:25:27.060 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\servlets-app4]
+24-Jul-2018 15:25:27.114 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\servlets-app4] has finished in [53] ms
+24-Jul-2018 15:25:27.114 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\servlets-app5]
+24-Jul-2018 15:25:27.351 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\servlets-app5] has finished in [237] ms
+24-Jul-2018 15:25:27.351 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [S:\softwares\Tomcat8.0\webapps\swesa]
+24-Jul-2018 15:25:27.430 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [S:\softwares\Tomcat8.0\webapps\swesa] has finished in [78] ms
+24-Jul-2018 15:25:27.435 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-7070"]
+24-Jul-2018 15:25:27.478 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+24-Jul-2018 15:25:27.495 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 11090 ms

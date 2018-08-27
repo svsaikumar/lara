@@ -1,0 +1,19 @@
+<hibernate-mapping package="com.lara.pack14">
+	<class name="Student" table="STUDENT">
+		<id name="id" column="S_ID">
+		<generator class="sequence">
+			<param name="sequence">student_seq</param>
+		</generator>
+		</id>
+		
+		
+		<property name="firstName"/>
+		<property name="lastName"/>
+		<array name="mails" cascade="all">
+			<key column ="student_id"/>
+			<index column="sno"/>
+			<one-to-many class="Mail"/>
+		</array>
+	</class>
+</hibernate-mapping>
+<!-- one student can have many mail accounts so we have to use <one-to-many>  -->

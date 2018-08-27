@@ -1,0 +1,61 @@
+
+<web-app>
+	<servlet>
+		<servlet-name>s1</servlet-name>
+		<servlet-class>pack2.Servlet1</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s1</servlet-name>
+		<url-pattern>/hello</url-pattern>
+		<url-pattern>/abc</url-pattern>
+		<url-pattern>/xyz</url-pattern>
+	</servlet-mapping>
+
+	
+<!--
+	2 servlets should not have a same name and same url-pattern
+	one servlet can have a any number of url-patterns
+	every url pattern should start with forward-slash("/")
+	we can give anything after forward-slash("/")
+	for one url-patterns 2 servlets can't be assigned
+	in order to achieve sercurity, for different customers we are giving different url patterns
+-->
+
+	<servlet>
+		<servlet-name>s2</servlet-name>
+		<servlet-class>pack2.Servlet2</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s2</servlet-name>
+		<url-pattern>/servlet2</url-pattern>
+	</servlet-mapping>
+<!--
+	===========================================================================
+-->
+	<servlet>
+		<servlet-name>s3</servlet-name>
+		<servlet-class>pack2.Servlet3</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s3</servlet-name>
+		<url-pattern>/servlet3</url-pattern>
+	</servlet-mapping>
+
+<!--
+	===========================================================================
+-->
+	<servlet>
+		<servlet-name>s6</servlet-name>
+		<servlet-class>pack2.Servlet6</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s6</servlet-name>
+		<url-pattern>/s6</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

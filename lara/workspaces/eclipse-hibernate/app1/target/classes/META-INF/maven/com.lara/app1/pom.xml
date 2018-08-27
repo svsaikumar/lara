@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.lara</groupId>
+  <artifactId>app1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+  
+  
+  
+  
+  <dependencies>
+  
+		  <dependency>
+				    <groupId>com.lara</groupId>
+				    <artifactId>ojdbc</artifactId>
+				    <version>11.2</version>
+				   <scope>system</scope> 
+				  <systemPath>S:\softwares\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib\ojdbc5.jar</systemPath>   
+				</dependency>
+				
+				
+				
+			  	<dependency>
+				    <groupId>org.hibernate</groupId>
+				    <artifactId>hibernate-core</artifactId>
+				    <version>5.2.17.Final</version>
+				</dependency>
+				
+				<dependency>
+				    <groupId>org.hibernate</groupId>
+				    <artifactId>hibernate-ehcache</artifactId>
+				    <version>5.2.17.Final</version>
+				</dependency>
+				
+	
+  </dependencies>
+</project>

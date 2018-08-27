@@ -1,0 +1,105 @@
+<web-app>
+	<servlet>
+		<servlet-name>s1</servlet-name>
+		<servlet-class>pack3.Servlet1</servlet-class>
+
+		
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s1</servlet-name>
+		<url-pattern>/s1</url-pattern>
+	</servlet-mapping>
+
+<!-- ====================================================== -->		
+	<servlet>
+		<servlet-name>s2</servlet-name>
+		<servlet-class>pack3.Servlet2</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s2</servlet-name>
+		<url-pattern>/s2</url-pattern>
+	</servlet-mapping>
+
+
+<!-- ====================================================== -->		
+
+	<servlet>
+		<servlet-name>s3</servlet-name>
+		<servlet-class>pack3.Servlet3</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s3</servlet-name>
+		<url-pattern>/s3</url-pattern>
+	</servlet-mapping>
+
+
+<!-- ====================================================== -->		
+
+	<servlet>
+		<servlet-name>s4</servlet-name>
+		<servlet-class>pack3.Servlet4</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s4</servlet-name>
+		<url-pattern>/s4</url-pattern>
+	</servlet-mapping>
+
+
+<!-- ====================================================== -->		
+
+	<servlet>
+		<servlet-name>s5</servlet-name>
+		<servlet-class>pack3.Servlet5</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s5</servlet-name>
+		<url-pattern>/s5</url-pattern>
+	</servlet-mapping>
+
+
+<!-- ====================================================== -->		
+
+	<servlet>
+		<servlet-name>s6</servlet-name>
+		<servlet-class>pack3.Servlet6</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s6</servlet-name>
+		<url-pattern>/s6</url-pattern>
+	</servlet-mapping>
+
+
+<!-- ====================================================== -->		
+
+	<servlet>
+		<servlet-name>s10</servlet-name>
+		<servlet-class>pack3.Servlet10</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s10</servlet-name>
+		<url-pattern>/s10</url-pattern>
+	</servlet-mapping>
+
+
+<!-- ====================================================== -->		
+
+	<servlet>
+		<servlet-name>s11</servlet-name>
+		<servlet-class>pack3.Servlet11</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s11</servlet-name>
+		<url-pattern>/s11</url-pattern>
+	</servlet-mapping>
+
+
+
+</web-app>

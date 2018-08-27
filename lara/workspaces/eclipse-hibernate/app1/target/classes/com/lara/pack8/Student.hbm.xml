@@ -1,0 +1,30 @@
+
+<hibernate-mapping package="com.lara.pack8">
+
+    <class name="Student" table="STUDENT">
+    
+    
+    
+    
+    
+    
+    
+        <id name="id" column="S_ID">
+        	<generator class="sequence">
+        		<param name="sequence">student_seq</param>
+        	</generator>
+        </id>
+       <property name="firstName"/>
+       <property name="lastName"/>
+       <one-to-one name="permanentAddress" class = "Address" cascade="all"/>
+       
+			<!--        1.persist
+						2.save-update
+						3.delete
+						4.none
+						5.all
+			
+			 -->
+     </class>
+     
+</hibernate-mapping>

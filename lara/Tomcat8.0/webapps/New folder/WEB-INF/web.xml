@@ -1,0 +1,12 @@
+<web-app>
+	<servlet>
+		<servlet-name>Servlet1</servlet-name>
+		<servlet-class>pack1.Servlet1</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Servlet1</servlet-name>
+		<url-pattern>/Servlet1</url-pattern>
+	</servlet-mapping>
+</web-app>

@@ -1,0 +1,11 @@
+<web-app>
+		<servlet>
+		<servlet-name>sarika</servlet-name>
+		<servlet-class>pack1.Servlet1</servlet-class>
+		</servlet>
+<servlet-mapping>
+<servlet-name>sarika</servlet-name>
+<url-pattern>/sarika</url-pattern>
+</servlet-mapping>
+
+</web-app>

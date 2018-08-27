@@ -1,0 +1,18 @@
+<hibernate-mapping package="com.lara.pack17">
+	<class name="Batch" table="BATCH">
+		<id name="id" column="B_ID">
+		<generator class="sequence">
+			<param name = "sequence">batch_seq</param>
+		</generator>
+		</id>
+		
+		
+		
+		<property name="title"/>
+		<property name="duration"/>
+ 		<set name="students" table="s_b" inverse="true"><!--intermediate table -->
+			<key column="b_id"/><!-- foreig jeu -->
+			<many-to-many column="s_id" class="Student"/>
+		</set>
+	</class>
+</hibernate-mapping>

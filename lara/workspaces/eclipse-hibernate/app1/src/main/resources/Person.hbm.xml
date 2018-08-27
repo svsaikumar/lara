@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+
+<hibernate-mapping package="com.lara.pack4">
+
+  <class name="Person" table="PERSON" discriminator-value="person">
+  
+      	<id name="id" column="PERSON_ID" />
+ 		<discriminator column ="obj-type" type="string"/> <!--this should be immediate after <id> tag -->
+        <property name="firstName" column="FIRST_NAME"/>
+        <property name="lastName" column="LAST_NAME"/>
+        
+        <subclass name ="Employee" discriminator-value="emp">
+        
+		        <property name = "email"/>
+		        <property name = "salary"/>
+		  
+			  		<subclass name = "PermanentEmployee" discriminator-value="p_emp">
+				  		 <property name = "designation"/>
+				  		 <property name = "leaves"/>
+			      	</subclass>
+	      	
+      	 </subclass>
+      
+   </class>
+     
+</hibernate-mapping>
+<!-- always property names should be the attribute names of the class -->
+<!-- under one <hibernate-mapping>, any number class mappings can be provided -->
+
+<!-- we can provide 3 different hbm files for 3 classes -->

@@ -1,0 +1,106 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        
+        
+        <property name="hibernate.connection.username">system</property>
+        <property name="hibernate.connection.password">Oracle123</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">none</property>
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.EhCacheRegionFactory</property>
+      
+        
+       
+        
+
+        
+<!--        my practise -->
+
+
+<!-- 						<mapping resource="com/lara/pack7/Student.hbm.xml"/> -->
+<!-- 				<mapping resource="com/lara/pack7/Address.hbm.xml"/>  -->
+
+
+<!--		 my practise -->
+
+
+
+
+
+<!--         <mapping resource="Person.hbm.xml"/> -->
+<!--  		<mapping class="com.lara.Person"/>  -->
+
+<!-- 			<mapping resource="com/lara/pack1/Person.hbm.xml"/> -->
+
+<!-- 			<mapping class="com.lara.pack1.Person"/> -->
+
+<!-- 			<mapping resource="com/lara/pack2/Person.hbm.xml"/> -->
+
+<!-- 				<mapping class="com.lara.pack4.Person"/> -->
+
+<!-- 				<mapping resource="com/lara/pack3/Person2.hbm.xml"/> -->
+
+<!-- 				<mapping class="com.lara.pack4.PermanentEmployee"/> -->
+
+<!-- 				<mapping class="com.lara.pack5.PermanentEmployee"/> -->
+
+<!-- 				<mapping class="com.lara.pack6.PermanentEmployee"/> -->
+
+<!-- 				<mapping resource="com.lara.Person.hbm.xml"/> -->
+
+<!-- 					<mapping resource="com/lara/pack7/Student.hbm.xml"/> -->
+<!-- 					<mapping resource="com/lara/pack7/Address.hbm.xml"/> -->
+
+<!-- 					<mapping resource="com/lara/pack8/Student.hbm.xml"/>  -->
+<!-- 					<mapping resource="com/lara/pack8/Address.hbm.xml"/> -->
+					
+					
+<!-- 					<mapping class ="com.lara.pack9.Student"/>  -->
+<!-- 					<mapping class ="com.lara.pack9.Address"/> -->
+
+<!-- 					<mapping class ="com.lara.pack10.Student"/>  -->
+<!-- 					<mapping class ="com.lara.pack10.Address"/> -->
+
+<!--					<mapping resource="com/lara/pack11/Student.hbm.xml"/> -->
+
+<!-- 					<mapping class="com.lara.pack12.Student"/> -->
+
+<!-- 						<mapping resource="com/lara/pack13/Student.hbm.xml"/> -->
+<!-- 						<mapping resource="com/lara/pack13/Mail.hbm.xml"/> -->
+						
+<!-- 						<mapping resource="com/lara/pack14/Student.hbm.xml"/> -->
+<!-- 						<mapping resource="com/lara/pack14/Mail.hbm.xml"/> -->
+
+<!-- 					<mapping class ="com.lara.pack15.Student"/>   -->
+<!--  					<mapping class ="com.lara.pack15.Mail"/>  -->
+ 					
+<!--  					<mapping class ="com.lara.pack16.Student"/>   -->
+<!--  					<mapping class ="com.lara.pack16.Mail"/>  -->
+ 					
+<!--  					<mapping resource="com/lara/pack17/Student.hbm.xml"/> -->
+<!-- 					<mapping resource="com/lara/pack17/Batch.hbm.xml"/> -->
+					
+<!-- 					<mapping class ="com.lara.pack18.Student"/>   -->
+<!--  					<mapping class ="com.lara.pack18.Batch"/> -->
+ 					
+ 					
+ 						<mapping resource="com/lara/pack19/Person.hbm.xml"/>
+ 					 
+    </session-factory>
+</hibernate-configuration>
+
+<!-- create -->
+<!-- if table is not available ,it creates new table, if table is already there , drops the table and creates new one -->
+<!-- always it looks to create a new table rather using the existing table -->
+
+
+
+<!-- update -->
+<!-- if table is available , it won't drop, it will reuse the same table -->
+

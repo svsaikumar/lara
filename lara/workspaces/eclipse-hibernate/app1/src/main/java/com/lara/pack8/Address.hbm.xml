@@ -1,0 +1,21 @@
+<hibernate-mapping package="com.lara.pack8">
+
+    <class name="Address" table="ADDRESS">
+    
+    
+    
+    
+    
+    
+    
+        <id name="addressId" column="ADDRESS_ID"><!-- Primary key and foreign key -->
+        	<generator class="foreign">
+        		<param name="property">student</param>
+        	</generator>
+        </id>
+       <property name="houseNo"/>
+       <property name="streetName"/>
+       <one-to-one name="student" class ="Student" constrained="true"/>    
+     </class>
+</hibernate-mapping>
+<!-- contrained = true; then only foreign key will be created in data base -->

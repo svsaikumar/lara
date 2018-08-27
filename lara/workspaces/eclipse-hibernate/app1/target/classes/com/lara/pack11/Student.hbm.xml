@@ -1,0 +1,64 @@
+
+
+
+
+
+
+
+
+
+
+
+<hibernate-mapping package="com.lara.pack11">
+
+	<class name="Student" table="STUDENT">
+	
+		<id name="id" column="S_ID">
+			<generator class="sequence">
+				<param name="sequence">student_seq</param>
+			</generator>
+		</id>
+		
+		<property name="name"/>
+		
+		<primitive-array name="mobileNos" table="mobile_nos">
+ 			<key column="S_ID"/>	<!--foreign -->
+			<list-index column="sno"/>	<!--mobile number index storing inside sno  -->
+			<element column="m_no" type="int"/>	<!--actual number is storing inside  m_no  -->
+		</primitive-array>
+		
+		<array name="projects" table="PROJECTS">
+			<key column="S_ID"/>
+			<list-index column = "sno"/>
+			<element column="project_name" type="string"/>
+		</array>
+		
+ 		<bag name="skills" table="SKILLS" lazy="true">	<!-- for raw collection type we use bag -->
+			<key column="S_ID"/>	<!-- primary key column -->
+			<element column="skills_name" type="string"/>
+		</bag>
+		
+		<list name="marks" table="MARKS">
+ 			<key column="S_ID"/>	<!--foreign key column -->
+ 			<list-index column = "sno"/><!--inedecx column -->
+			<element column="marks" type="int"/>
+		</list>
+		
+		
+ 		<set name="jobs" table="JOBS">	<!--for set no index column -->
+			<key column="S_ID"/>	<!-- foreign key column -->
+			<element column="job" type="string"/>
+		</set>
+		
+		
+		<map name="educations" table="EDUCATIONS">
+			<key column="S_ID"/>	<!-- every value is key value pair -->
+ 			<map-key column = "name" type="string"/>	<!--for key one column -->
+			<element column="education" type="string"/>	<!-- for value one column -->
+		</map>
+		
+	</class>
+</hibernate-mapping>
+<!-- bag donesn have a index column becaue we can't say what it is(i.e list, set, map...) -->
+<!-- list has index, array has index(index is only for arrays and list) -->
+<!-- in every table we can find foreign key -->

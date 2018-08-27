@@ -1,0 +1,24 @@
+
+<hibernate-mapping package="com.lara.pack2">
+
+    <class name="Person" table="PERSON">
+    
+    
+    
+    
+    
+    
+    
+        <composite-id name="personPK" class ="PersonPK" >
+        		<key-property name="firstName" column="FIRST_NAME"/>
+        		<key-property name="email"/>
+        </composite-id>
+       <property name="lastName" column="LAST_NAME"/>
+       <property name="age"/>
+       
+     </class>
+     
+</hibernate-mapping>
+<!-- polymorphic mapping -->
+<!-- subclass PersonPK is assigning to Person table, here polymorphic mapping is happening -->
+<!-- composite -id is used if we want more than one primary key -->

@@ -1,0 +1,21 @@
+<hibernate-mapping package="com.lara.pack7">
+
+    <class name="Address" table="ADDRESS">
+    
+    
+    
+    
+    
+    
+    
+        <id name="addressId" column="ADDRESS_ID"><!-- Primary key and foreign key -->
+        	<generator class="foreign">
+        		<param name="property">student</param>
+        	</generator>
+        </id>
+       <property name="houseNo"/>
+       <property name="streetName"/>
+       <one-to-one name="student" class ="Student"/>    
+     </class>
+</hibernate-mapping>
+

@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+
+
+
+<hibernate-mapping package="com.lara.pack3">
+
+  <class name="Person" table="PERSON" >
+  
+      	<id name="id" column="PERSON_ID" />
+        <property name="firstName" column="FIRST_NAME"/>
+        <property name="lastName" column="LAST_NAME"/>
+        
+        <joined-subclass name ="Employee" table="Employee">
+        		
+        		<key column="p_id"/>
+		        <property name = "email"/>
+		        <property name = "salary"/>
+	
+			  		<joined-subclass name = "PermanentEmployee" table="P_Employee" >
+			  		
+			  			 <key column="e_id"/>
+				  		 <property name = "designation"/>
+				  		 <property name = "leaves"/>
+			      	</joined-subclass>
+	      	
+      	 </joined-subclass>
+   </class>
+     
+</hibernate-mapping>
+
+
+
+<!-- The <joined-subclass> element of class is used to map the child class with parent using the primary key and foreign key relation. -->
+<!-- The joined-subclass sub element of class, specifies the subclass. -->
+
+<!-- The key sub-element of joined-subclass is used to generate the foreign key in the subclass mapped table.  -->
+<!-- This foreign key will be associated with the primary key of parent class mapped table. -->

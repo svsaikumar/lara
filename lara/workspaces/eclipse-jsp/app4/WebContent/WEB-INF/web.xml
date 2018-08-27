@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>app4</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>con1</param-name>
+    <param-value>oracle</param-value>
+  </context-param>
+  <context-param>
+    <param-name>con2</param-name>
+    <param-value>mysql</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>Servlet1</display-name>
+    <servlet-name>Servlet1</servlet-name>
+    <servlet-class>pack4.Servlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet1</servlet-name>
+    <url-pattern>/Servlet1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Servlet2</display-name>
+    <servlet-name>Servlet2</servlet-name>
+    <servlet-class>pack4.Servlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet2</servlet-name>
+    <url-pattern>/Servlet2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Servlet3</display-name>
+    <servlet-name>Servlet3</servlet-name>
+    <servlet-class>pack4.Servlet3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet3</servlet-name>
+    <url-pattern>/Servlet3</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Servlet4</display-name>
+    <servlet-name>Servlet4</servlet-name>
+    <servlet-class>pack4.Servlet4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet4</servlet-name>
+    <url-pattern>/Servlet4</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Servlet5</display-name>
+    <servlet-name>Servlet5</servlet-name>
+    <servlet-class>pack4.Servlet5</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet5</servlet-name>
+    <url-pattern>/Servlet5</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Servlet6</display-name>
+    <servlet-name>Servlet6</servlet-name>
+    <servlet-class>pack4.Servlet6</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet6</servlet-name>
+    <url-pattern>/Servlet6</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+<!--   <jsp-config> -->
+<!--   	<jsp-property-group> -->
+<!--   		<url-pattern>*.jsp</url-pattern> -->
+<!--   		<el-ignored>true</el-ignored> -->
+<!--   	</jsp-property-group> -->
+<!--   </jsp-config> -->
+</web-app>
