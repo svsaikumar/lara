@@ -1,0 +1,5 @@
+class H 
+{}
+
+//we can develop a class a without composing the main method
+// but we can't run it , only compilation is done

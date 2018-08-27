@@ -1,0 +1,28 @@
+//package pack1;
+
+
+
+
+
+class M4
+{
+	public static void main(String[] args)
+	{
+		Day[] days = Day.values();
+		for (Day day : days)
+		{
+		System.out.println(day);
+		}
+	}
+}
+
+// all the constant into one array
+
+
+// output : MON
+//			TUE
+//			WED
+//			THR
+//			FRI
+//			SAT
+//			SUN

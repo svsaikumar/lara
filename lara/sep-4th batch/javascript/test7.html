@@ -1,0 +1,100 @@
+<form>
+	First Name : <input type="text" name="firstName"/> </br>
+	Love Name : <input type="password" name="loveName"/> </br>
+	Address : <textarea name="address" cols="20" rows="5"></textarea> </br>
+			  
+	Gender : <input type="radio" name="gender" value="m"/> Male
+			 <input type="radio" name="gender" value="f"/> FeMale </br>
+			 
+
+	Skill : <input type="checkbox" name="skill" value="c" /> C
+			<input type="checkbox" name="skill" value="cpp" /> C++
+			<input type="checkbox" name="skill" value="java" /> Java </br>
+
+
+	
+	Education :	<select name="education">
+					<option value="">PLEASE SELECT</option>
+					<option value="be">BE</option>
+					<option value="mca">MCA</option>
+				</select> </br>
+
+			<input type="submit" value="submit" onclick="return validateRegistration()"/>
+
+		<script>
+			function validateRegistration()
+			{
+				var myForm = document.forms[0];
+				var firstName = myForm.firstName;
+				if(firstName.value.length == 0)
+				{
+					alert("Please enter first name");
+					firstName.focus();
+					return false;
+				}
+				var loveName = myForm.loveName;
+				if(loveName.value.length == 0)
+				{
+					alert("Please enter love name");
+					loveName.focus();
+					return false;
+				}
+				var address = myForm.address;
+				if(address.value.length == 0)
+				{
+					alert("Please enter address");
+					address.focus();
+					return false;
+				}
+
+				var gender = myForm.gender;
+				var flag = true;
+				for(var i = 0; i < gender.length; i++)
+				{
+					if(gender[i].checked)
+					{
+						flag = false;
+						break;
+					}
+				}
+				if(flag)
+				{
+					alert("please select gender");
+					gender[0].focus();
+					return false;
+				}
+
+
+				var skill = myForm.skill;
+				flag = true;
+				for(var i = 0; i < skill.length; i++)
+				{
+					if(skill[i].checked)
+					{
+						flag = false;
+						break;
+					}
+				}
+				if(flag)
+				{
+					alert("please select skill");
+					skill[0].focus();
+					return false;
+				}
+
+				var education = myForm.education;	
+				if(education.value.lenghth == 0)
+				{
+					alert("please select education");
+					education[0].focus();
+					return false;
+				}
+				if(flag)
+				{
+					flag = false;
+					break;
+				}
+
+			}
+		</script>
+</form>

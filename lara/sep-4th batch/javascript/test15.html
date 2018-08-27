@@ -1,0 +1,64 @@
+<form>
+	State : <select name ="state" onchange="populateDistricts()" >
+				<option value="0">Please select</option>
+				<option value="1">Karnataka</option>
+				<option value="2">Andhra</option>
+				<option value="3">Telangana</option>
+				<option value="4">TamilNadu</option>
+			</select> </br>
+	District: <div id="districtsId">
+				<select name="district">
+					<option value=""> Pls select state</option>
+				</select>
+			</div>
+</form>
+
+<div id ="0" style = "visibility:hidden">
+	<select name = "district">
+		<option value="1">please select state </option>
+	</select>
+</div>
+<div id ="1" style = "visibility:hidden">
+	<select name = "district">
+		<option value="1">Banglore</option>
+		<option value="2">Mysore</option>
+		<option value="3">Kolar</option>
+	</select>
+</div>
+
+<div id ="2" style = "visibility:hidden">
+	<select name = "district">
+		<option value="1">kadapa</option>
+		<option value="2">ananthapur</option>
+		<option value="3">Nellore</option>
+	</select>
+</div>
+<div id ="3" style = "visibility:hidden">
+	<select name = "district">
+		<option value="1">Hyderabad</option>
+		<option value="2">Nalgonda</option>
+		<option value="3">Khammam</option>
+	</select>
+</div>
+<div id ="4" style = "visibility:hidden">
+	<select name = "district">
+		<option value="1">Chennai</option>
+		<option value="2">vellore</option>
+		<option value="3">Coimbatore</option>
+	</select>
+</div>
+
+<script>
+
+	function populateDistricts()
+	{
+		var state = document.forms[0].state;
+		document.getElementById("districtsId").innerHTML = document.getElementById(state.value).innerHTML;
+	}
+
+
+</script>
+
+<!--onchange -selecting one
+
+-->

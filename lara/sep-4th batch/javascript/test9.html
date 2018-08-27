@@ -1,0 +1,58 @@
+<form>
+	Skills:  <input type="checkbox" name="skills" value="c" onclick="verifyAllCheck()"/> C &nbsp;
+			 <input type="checkbox" name="skills" value="cpp" onclick="VerifyAllCheck()"/> C++ &nbsp;
+			 <input type="checkbox" name="skills" value="java" onclick="VerifyAllCheck()" /> Java &nbsp;
+			 <input type="checkbox" name="skills" value="orcl" onclick="VerifyAllCheck()" /> Oracle </br>
+			 <input type="checkbox" name="controller" onclick="selectAll()" /> Select All </br>
+
+</form>
+<script>
+	function selectAll()
+	{
+		var myForm = document.forms[0];
+		var skills = myForm.skills;
+		var c1 = myForm.controller;
+		if(c1.checked)
+		{
+			for( var i=0; i<skills.length; i++)
+			{	
+				skills[i].checked = true;
+			}
+		}
+		else
+		{
+			for( var i=0; i<skills.length; i++)
+			{
+				skills[i].checked = false;
+			}
+		}
+	}
+	function VerifyAllCheck()
+		{
+			var myForm = document.forms[0];
+			var skills = myForm.skills;
+			var c1 = myForm.controller;
+			var all checked = true;
+
+			for( var i=0; i<skills.length; i++)
+			{	
+				if(!skills[i].checked)
+				{
+					allChecked = false;
+					break;
+				}
+			}
+			c1.checked = allChecked;
+		}
+	
+	
+		
+		
+</script>
+
+
+
+<!--whenever we use submit then only we should use return
+	only for submit buttom return is required
+
+-->

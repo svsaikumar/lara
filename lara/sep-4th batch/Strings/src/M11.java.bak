@@ -1,0 +1,17 @@
+class M11
+{
+	public static void main(String[] args) 
+	{
+		String s1 = " abc xyz ";
+		int i = s1.length();
+		System.out.println(i);
+		//System.out.println(s1);
+		s1.trim();//trim is not working  here as string class is immutable
+		i = s1.length();
+		System.out.println(i);
+		//System.out.println(s1);
+
+	}
+}
+//trim removes leading and   white spaces of the string
+//before 'a' and after 'z' white spaces are removed

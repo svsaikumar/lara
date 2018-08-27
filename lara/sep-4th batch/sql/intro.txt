@@ -1,0 +1,6 @@
+1521-server port number
+8080-http based client(we can't use 8080 for other softwares)
+while installing Oracle not only server installation, one default database is creating whose name is "XE"
+we can also create one data base explicitly(not required default is enough i.e XE)
+not require to start oracle explicitly it is automatic(we can start manuallY also)
+while starting a system oracle server is starting automatically

@@ -1,0 +1,57 @@
+<persons>
+	<person id='p101'>
+		<name>Ramu</name>
+		<age>25</age>
+		<weight>55.7</weight>
+	</person>
+
+
+	<person u_id='p102' some_id="00001">
+		<name>Manu</name>
+		<age>35</age>
+		<weight>65.7</weight>
+	</person>
+
+	<person></person>
+
+	<person/>
+	<person id="p4757757"/>
+
+	<person k_id="hello"></person>
+
+	<person>
+		<address>BTM</address>
+	</person>
+
+
+
+
+<!-- attributes is mainly for meta purpose(here id is an attribute)
+every attribute value can be in single or double quotes(double is recommended)
+if there are multiple attributes for the same tag use comma as a separator
+in xml we can't develop single tag(without an end tag)
+we can go for empty tag without any  content between the tags
+empty tag can have a attribute
+we can make starting as a ending tag
+
+DOM parser(document object model)-tree structure-it is not recommended while interacting with
+	-we can read and write the file
+	-we can read the file in the revers order also as the entire file is available in the memory
+	-it is available in JDK installation
+SAX parser(simple API for xml) -event model-it is reading only the required portion of the xml file based on the event
+	-u can read any xml file no matter about the size of the file
+	-no chance of memory overhead
+	-we can't write the file.we an only read
+	-we can read the file only inthe forward order we can't read it in the reverse order
+	-it is available in the JDK  installation
+	-->
+
+
+	<person>
+		<age> may be &gt; 25</age>
+		<age> may be &lt; 25</age>
+		<name> Ramu &amp; vijay </name>
+		<country> Great &quot; India &quot; </country>
+		<gender> &apos;M&apos; </gender>
+	</person>
+</persons>

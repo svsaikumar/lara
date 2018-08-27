@@ -1,0 +1,29 @@
+interface A
+{
+	default void test()
+	{
+		System.out.println("from A.test()");
+	}
+}
+class B implements A
+{
+	
+}
+class M6 extends B
+{
+	public static void main(String[] args) 
+	{
+		B b1 = new B();
+		b1.test();
+		System.out.println("done");
+	}
+}
+//non static default  methods of interface will inherit to subclass
+//we can't use as A.test as test method is non static
+//we cannot create an object to A.we have to go for sub class.
+/*test method is non static so we cant use A.test as it is non static.we have to create an object to A,but we can't create.
+we have to go for subclass.defining a sub class and making that subclass as concrete by implementiong any unimplemented method creating 
+an object to that subclass.through reference of that object it is called
+*/
+
+

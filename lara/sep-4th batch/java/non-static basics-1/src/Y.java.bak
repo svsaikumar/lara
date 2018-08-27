@@ -1,0 +1,15 @@
+class Y 
+{
+	int i;
+	static Y test()
+	{
+		Y t1 = new Y();
+		y1.i = 20;
+		return y1;
+	}
+	public static void main(String[] args) 
+	{
+		Y obj = test();
+		System.out.println("main:" + obj.i);
+	}
+}

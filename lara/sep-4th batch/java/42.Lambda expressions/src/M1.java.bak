@@ -1,0 +1,29 @@
+interface A
+{
+	void test();
+}
+class  B implements A
+{
+	public  void test() 
+	{
+		System.out.println("from test");
+	}
+}
+class M1
+{
+	public static void main(String[] args)
+	{
+		B b1 = new B();
+		b1.test();
+		System.out.println("done");
+	}
+}
+//lamda expressions are introdeced in JDK 1.8 in order to single method interfaces
+//any interface without memberes is known as marker interface
+//any interface with only one method is known as fuctional interface
+//main marker interfare are clonable and serializable
+//functional interface
+	//runnable only one method
+	//comparible that containlng only method
+	//comparator functional interface
+//lamda expressions are  only for functional interfaces

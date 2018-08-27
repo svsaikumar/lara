@@ -1,0 +1,23 @@
+interface  A
+{
+	static void test()
+	{
+		System.out.println("A_test()");
+	}
+}
+interface B extends A
+{
+}
+class M3
+{
+	public static void main(String[] args) 
+	{
+		A.test();//error here
+		System.out.println("done");
+	}
+}
+//static defined inside interface are only for that interface,but  not for sub-interfaces
+//inside interface if we want to provide unavoidable implementation inside interface that can be done through static method only
+//and that static defined methodis availale only for that interface only that will not be sharing to sub interfaces
+//
+ 

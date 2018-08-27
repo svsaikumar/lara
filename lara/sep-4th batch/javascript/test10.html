@@ -1,0 +1,57 @@
+<form>
+	First Name : <input type="text" name = "firstName" onblur="trim(this)"/> </br>
+	Last Name : <input type="text" name = "lastName" onblur="trim(this)"/> </br>
+	Email : <input type="text" name = "email" onblur="trim(this)" onclick="removeSpaces(this)"/> </br>
+			<input type="text" name = "test" onblur="testIndexs(this)" /> </br>
+			<input type="submit" value="submit" />
+</form>
+
+<script>
+	function trim(field)
+	{
+		var value = field.value;
+		var firstChar = value.charAt(0);
+		while(firstChar == ' ')
+		{
+			value = value.substring(1, value.length);
+			firstChar = value.charAt(0);
+		}
+		var lastChar = value.charAt(value.length -1);
+		while(lastChar == ' ')
+		{
+			value = value.substring(0, value.length - 1);
+			lastChar = value.charAt(value.length -1);
+		}
+		//field.value = value;
+	}
+
+	function removeSpaces(field)
+	{
+		var value = field.value;
+		var c1;
+		for(var i = 0; i < value.length; i++)
+		{
+			c1 = value.charAt(i);
+			if(c1 == ' ')
+			{
+				value = value.substring(0,i) + value.substring(i+1, value.length);
+				i--;
+			}
+		}
+		field.value = value;
+	}
+
+	function testIndexes(field)
+	{
+		var value = field.value;
+		var x = value.substring(0,0);
+		var y = value.substring(3,3);
+		alert(value);
+		alert(x);
+		alert(y);
+	}
+</script>
+<!-- this means the firtname in the current textfield
+	charAt is a method name
+	charAt(0) means value at index 0
+-->

@@ -1,0 +1,15 @@
+class  H
+{
+	int i;
+	public static void main(String[] args) 
+	{
+		H h1 = new H();//object creation
+		System.out.println(h1.i);
+	}
+}
+//whenever obj is creating every non static members are loaded
+//h1 is derived type variable
+//h1 data type is H class.we can call it as derived data type not as primitive type variable
+//derived data type variable can also be called as reference variable
+//referece variable refers to the object
+//by using h1 we can access non static members

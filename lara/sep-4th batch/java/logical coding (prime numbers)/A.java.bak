@@ -1,0 +1,11 @@
+class  A
+{
+	public static void main(String[] args) 
+	{
+		int num = 100;
+		System.out.println(num % 10);
+		System.out.println(num / 10);
+		System.out.println(num);
+	}
+}
+//' % ' gives remainder of the division

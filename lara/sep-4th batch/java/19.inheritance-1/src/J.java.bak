@@ -1,0 +1,42 @@
+class I 
+{
+	int x=10;
+	static int y;
+	void test1()
+	{
+		System.out.println("test-1");
+	}
+	static void test2()
+	{
+		System.out.println("test-2");
+	}
+}
+class J extends I
+{
+	int m;
+	static int n;
+	void method1()
+	{
+		System.out.println("method-1");
+	}
+	static void method2()
+	{
+		System.out.println("method-2");
+	}
+	public static void main(String[] args) 
+	{
+		
+
+		System.out.println(J.y);
+		System.out.println(J.n);
+		J.test2();//here "J." is optional as test2 is static
+		J.method2();//here "J." is optional as method2 is static
+		J obj = new J();
+		System.out.println(obj.x);
+		System.out.println(obj.m);
+		obj.test1();
+		obj.method2();
+
+	}
+}
+//the blocks which we are using for initialization purpose ,can't be involved in inheritance

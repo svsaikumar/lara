@@ -1,0 +1,18 @@
+interface  A
+{
+	static void test()
+	{
+		System.out.println("A_test()");
+	}
+}
+class M4 implements A
+{
+	public static void main(String[] args) 
+	{
+		//A.test(); this is legal 
+		M4.test();
+		System.out.println("done");
+	}
+}
+//the unavoidable(static defined method) implementation is limited to current interface only
+//

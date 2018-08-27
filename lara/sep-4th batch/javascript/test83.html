@@ -1,0 +1,47 @@
+<form>
+	Skills:  <input type="checkbox" name="skills" value="c" onclick="skill()"/> C &nbsp;
+			 <input type="checkbox" name="skills" value="cpp" onclick="skill()"/> C++ &nbsp;
+			 <input type="checkbox" name="skills" value="java" onclick="skill()"/> Java &nbsp;
+			 <input type="checkbox" name="skills" value="orcl" onclick="skill()"/> Oracle </br>
+			 <input type="checkbox" name="controller" onclick="selectAll()" /> Select All </br>
+			 
+</form>
+<script>
+
+	
+function skill()
+	{
+		var myForm = document.forms[0];
+		var skills = myForm.skills;
+		var c1 = myForm.controller;
+		var count = 0;
+		
+		for( var i = 0; i<skills.length; i++)
+		{
+			if(skills[i].checked)
+			{
+				count ++;
+			}
+		}
+		
+		if(count == skills.length)
+		{
+			c1.checked = true;
+		}
+		else
+		{
+			c1.checked = false;
+		}
+		
+	}
+	
+		
+		
+</script>
+
+
+
+<!--whenever we use submit then only we should use return
+	only for submit buttom return is required
+
+-->

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- this is known as prolog -->
+<books>
+    <book>xml book</book>
+    <book>spring book</book>
+</books>

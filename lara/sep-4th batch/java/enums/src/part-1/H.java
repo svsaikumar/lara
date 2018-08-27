@@ -1,0 +1,15 @@
+package pack1;
+enum H
+{
+	public H()
+	{
+	}
+}
+
+// private and default constactor are allowed 
+// public and protected constractor are not allowed 
+// enum constat are private it is expecting ';'
+// constractor is using enum by default
+// enum constractor compile only enum constat
+// we are not define enum constant in outside a enum
+// enum constant only constractor require

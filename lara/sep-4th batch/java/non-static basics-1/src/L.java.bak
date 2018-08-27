@@ -1,0 +1,10 @@
+class L
+{
+	int i;
+
+	static void test()
+	{
+		L ref = new L();
+		ref.i = 20;
+	}
+}

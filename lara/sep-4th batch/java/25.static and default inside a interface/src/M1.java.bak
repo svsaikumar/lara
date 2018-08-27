@@ -1,0 +1,18 @@
+interface  A
+{
+	static void test()
+	{
+		System.out.println("A.test()");
+	}
+}
+class M1
+{
+	public static void main(String[] args) 
+	{
+		A.test();
+		System.out.println("done");
+	}
+}
+//from JDK 1.8 we can develop static defined methods and default defined methods inside interface 
+//we can call static test in interface A directly from a static(as both are static)
+//SIB are not allowed in interface

@@ -1,0 +1,17 @@
+interface A//interface with only one method is for lamda expressions
+{
+	void test(int i);
+}
+class M7
+{
+
+	
+	public static void main(String[] args)
+	{
+		 A a1 = (int i) -> 
+						System.out.println("from test:" +i);
+		a1.test(10);
+		System.out.println("done");
+	}
+}
+//

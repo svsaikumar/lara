@@ -1,0 +1,13 @@
+class B 
+{
+	B()
+	{
+		
+		this(90);
+	}
+	B(int i)
+	{
+		this();
+	}
+}
+//this() always should be first member in the block

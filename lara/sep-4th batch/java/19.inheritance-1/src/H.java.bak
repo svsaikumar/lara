@@ -1,0 +1,23 @@
+class G 
+{
+	static void test1()
+	{
+		System.out.println("from test-1");
+
+	}
+}
+class H extends G
+{
+	static void test2()
+	{
+		System.out.println("from test-2");
+
+	}
+	public static void main(String[] args) 
+	{
+		H.test1();//here using " H." is optional
+		H.test2();//here using " H." is optional
+		System.out.println("done");
+	}
+}
+//G class test1 also available in H class

@@ -1,0 +1,8 @@
+class  B
+{
+	int i = 20; 
+	public satic void main(String[] args) 
+	{
+		System.out.println(i);
+	}
+}

@@ -1,0 +1,20 @@
+<p id="p1">Hello </p>
+
+<input type="button" value="replce p content" onclick="reverse()"/>
+
+<script>
+	function reverse()
+	{
+		var v1 = document.getElementById("p1").innerHTML;
+		var rev = "";
+		for(var i = v1.length-1; i >= 0; i--)
+		{
+			rev += v1.charAt(i);
+		}
+		document.getElementById("p1").innerHTML = rev;
+	}
+</script>
+
+<!--
+
+-->

@@ -1,0 +1,11 @@
+<b>Hello to all</b>					</br>
+<u><b>Hello to all<b></u>			</br>
+<i><b>Hello to all<b></i>			</br>
+<u><i><b>Hello to all<b></i></u>	</br>
+
+
+<!	<b> is to make the text bold>
+<!	<u> is to make the text underline>
+<!	<i> is to make the text italic>
+
+<! we can specify starting itselg as  ending if there is no body.here we notice that as </br>  >

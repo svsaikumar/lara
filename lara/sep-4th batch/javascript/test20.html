@@ -1,0 +1,19 @@
+<p id="demo"> no person</p>
+<input type ="button" value="Get Person" onclick="populate()"/>
+<script>
+	var person = {	firstName : "John ",
+					lastName  : "Doe ",
+					age		  : 50,
+					eyeColor  : " blue"
+				 };
+
+	function populate()
+	{
+
+		document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " years old."; 
+	}
+</script>
+
+<!-- 
+
+-->
